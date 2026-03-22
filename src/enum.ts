@@ -26,7 +26,7 @@ const user2 : LoginDetails = {
 
 const isAdmin : (user1: LoginDetails) => string = (user1:LoginDetails) : string => {
     const {name, email, password, role} = user1;
-    return role === Roles.user ? `${name} is allow to edit the website`:`${name} is not allow to edit the website`
+    return role === Roles.user ? `${email} is allow to edit the website`:`${email} is not allow to edit the website`
 }
 
 console.log(isAdmin(user1))
