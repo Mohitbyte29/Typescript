@@ -1,4 +1,6 @@
+"use strict";
 //! By Union --> It can fail for more than 2 dataTypes
+Object.defineProperty(exports, "__esModule", { value: true });
 // function logAndReturn(value: number | string): number | string | boolean{ ---> give error
 //     console.log(value);
 //     return value
@@ -12,9 +14,10 @@
 function logAndReturn(value) {
     return value;
 }
-var numberResult = logAndReturn(42);
-var stringResult = logAndReturn("Hello Generics");
-var booleanResult = logAndReturn(true);
+const numberResult = logAndReturn(42);
+const stringResult = logAndReturn("Hello Generics");
+const booleanResult = logAndReturn(true);
 console.log(numberResult);
 console.log(stringResult);
 console.log(booleanResult);
+//# sourceMappingURL=generics.js.map

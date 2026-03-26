@@ -1,4 +1,6 @@
-var person = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const person = {
     name: "Deepanshu",
     age: 24,
     isStudent: true,
@@ -7,7 +9,7 @@ var person = {
         country: "India"
     }
 };
-var person1 = {
+const person1 = {
     name: "Mohit",
     age: 20,
     isStudent: true,
@@ -16,12 +18,13 @@ var person1 = {
         country: "India"
     }
 };
-var product = {
+const product = {
     name: "Laptop",
     price: 50000,
     quantity: 5
 };
-var calculateTotalPrice = function (product) {
+const calculateTotalPrice = (product) => {
     return product.price * product.quantity;
 };
 console.log(calculateTotalPrice(product));
+//# sourceMappingURL=type-aliases.js.map

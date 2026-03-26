@@ -52,9 +52,48 @@ let bigNumber = 9007199254740993n;
 console.log(bigNumber);
 let anotherBIgNumber = BigInt("9007199254740995");
 console.log(anotherBIgNumber);
+//* any type
+let myfavNum = 5;
+myfavNum = "Mohit";
+myfavNum = true;
+//* Usecases 
+//! 1. ---> Working with Dynamic Data
+//! 2. ---> Migration from JavaScript
+//* Unknown type
+//! The unknown type is a safer alternative to any because it still enforces type checking and type safety
+//! Variables of this type can hold values of any type, but you must perform type checks or type assertions before using them in specific ways
+//! Type-safety
+let myfavNum2;
+myfavNum2 = true;
+myfavNum2 = "Mohit";
+myfavNum2 = 60;
+if (typeof (myfavNum2) === "number") {
+    console.log(myfavNum2 + 39);
+}
+else if (typeof (myfavNum2) === "boolean") {
+    console.log(myfavNum2);
+}
+async function fetchData() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        if (!response.ok) {
+            throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        return data;
+    }
+    catch (err) {
+        console.log(err);
+    }
+}
+async function processData() {
+    const student = [34, 53, 29];
+    const response = await fetchData();
+    if (typeof response === 'object') {
+        student.forEach((element) => {
+            console.log(element);
+        });
+    }
+}
+processData();
 //# sourceMappingURL=type-annotations.js.map
-
-var sum2 = bigNumber + anotherBIgNumber;
-console.log("sum2 " + sum2);
-
-

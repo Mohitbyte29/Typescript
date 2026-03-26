@@ -1,4 +1,6 @@
-var person = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const person = {
     name: "Deepanshu",
     age: 24,
     isStudent: true,
@@ -12,8 +14,9 @@ console.log(person.address.city);
 // Todo updating object properties
 person.address.country = "China";
 console.log(person.address.country);
-var product = {
+const product = {
     name: "Laptop",
     price: 50000,
     quantity: 5
 };
+//# sourceMappingURL=object.js.map

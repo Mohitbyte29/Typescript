@@ -1,8 +1,11 @@
-var displayPersonInfo = function (person) {
-    var name = person[0], age = person[1], hasDriverLicense = person[2];
-    console.log("Name: ".concat(name, ", Age: ").concat(age, ", Driver's License: ").concat(hasDriverLicense ? "Yes" : "No"));
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const displayPersonInfo = (person) => {
+    const [name, age, hasDriverLicense] = person;
+    console.log(`Name: ${name}, Age: ${age}, Driver's License: ${hasDriverLicense ? "Yes" : "No"}`);
 };
-var person1 = ["Mohit", 20, true];
-var person2 = ["Vinod", 15, false];
+const person1 = ["Mohit", 20, true];
+const person2 = ["Vinod", 15, false];
 displayPersonInfo(person1);
 displayPersonInfo(person2);
+//# sourceMappingURL=tuples.js.map

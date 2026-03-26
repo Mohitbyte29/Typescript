@@ -1,28 +1,30 @@
+"use strict";
 // function greet(name:string, id:number){
 //     console.log(`Welcome, Your name is ${name} and your ID is ${id}`);
 // }
+Object.defineProperty(exports, "__esModule", { value: true });
 // greet("Mohit", 102);
 //! Arrow functions 
-var greet = function (name, id) {
-    console.log("Welcome, Your name is ".concat(name, " and your ID is ").concat(id));
+let greet = (name, id) => {
+    console.log(`Welcome, Your name is ${name} and your ID is ${id}`);
 };
 greet("Mohit", 34);
-var isPalindrome = function (palin) {
-    var myPalin = palin.split("").reverse().join("");
+const isPalindrome = (palin) => {
+    let myPalin = palin.split("").reverse().join("");
     return myPalin === palin;
 };
 console.log(isPalindrome("12366321"));
-var marks = [34, 32, 82, 19, 30];
-var calculateAverage = function (marks) {
-    var totalMarks = marks.reduce(function (arr, curr) {
+let marks = [34, 32, 82, 19, 30];
+const calculateAverage = (marks) => {
+    let totalMarks = marks.reduce((arr, curr) => {
         return arr + curr;
     }, 0);
     return totalMarks / marks.length;
 };
 console.log(calculateAverage(marks));
-var findMaxValue = function (marks) {
-    var maxNum = 0;
-    marks.forEach(function (elem) {
+const findMaxValue = (marks) => {
+    let maxNum = 0;
+    marks.forEach((elem) => {
         if (elem > maxNum) {
             maxNum = elem;
         }
@@ -30,3 +32,4 @@ var findMaxValue = function (marks) {
     return maxNum;
 };
 console.log(findMaxValue(marks));
+//# sourceMappingURL=functions-intro.js.map

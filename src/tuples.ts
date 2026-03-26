@@ -1,8 +1,6 @@
 type personInfo = readonly [string, number, boolean];
 
-const displayPersonInfo: (person: personInfo) => void = (
-  person: personInfo,
-): void => {
+const displayPersonInfo  = (person: personInfo) : void => {
   const [name, age, hasDriverLicense] = person;
   console.log(`Name: ${name}, Age: ${age}, Driver's License: ${hasDriverLicense ? "Yes" : "No"}`);
 };
