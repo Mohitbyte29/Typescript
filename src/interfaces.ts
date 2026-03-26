@@ -1,4 +1,5 @@
 //* By type aliases
+//* done
 
 type greets = {
     name: string,
